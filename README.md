@@ -6,6 +6,9 @@
 
 This is frontend exercise to create a todo app list.
 
+## Live Demo
+https://distracted-khorana-6160ed.netlify.app
+
 ## Overview
 
 This project is built using the following technologies:
@@ -76,5 +79,4 @@ yarn cypress run
 ```
 
 
-## Live Demo
-https://distracted-khorana-6160ed.netlify.app
+
