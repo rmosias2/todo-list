@@ -24,7 +24,7 @@ This project is built using the following technologies:
 ## Requirements
 
 1. [Node.js](https://nodejs.org/)
-2. [npm](https://yarnpkg.com)
+2. [Yarn](https://yarnpkg.com)
 
 ## Installation
 
