@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
+import ColorModeSwitcher from '../components/ToggleTheme';
 
 const Home: NextPage = () => {
-  return (<div />)
+  return (<ColorModeSwitcher />)
 }
 
 export default Home
