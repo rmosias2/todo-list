@@ -39,7 +39,7 @@ describe('todo list flows', () => {
 
   })
 
-  it('can filter for completed tasks', () => {
+  it('delete task', () => {
     cy.get('[data-testid=taskinput-todo-app]').type(`${newItem}{enter}`)
     cy.get('[data-testid=taskbutton-todo-app-delete]').click();
     cy.get('[data-testid=taskbutton-todo-app-done]').should('not.exist');
