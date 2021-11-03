@@ -11,6 +11,7 @@ import { TargetAndTransition } from "framer-motion/types/types";
 import React, { useState } from "react";
 import { MotionFlex } from "./Motions";
 import { useTask } from '../hooks/task';
+import { FaUndo } from "react-icons/fa"
 
 interface Task {
     name: string;
@@ -87,13 +88,14 @@ const TaskField: React.FC<TaskFieldProps> = ({
       </Editable>
       <IconButton
         aria-label="done"
-        icon={<CheckIcon />}
+        data-testid={TaskObj.isCompleted ? 'taskbutton-todo-app-undone' :  'taskbutton-todo-app-done'}
+        icon={TaskObj.isCompleted ? <FaUndo/> : <CheckIcon />}
         size="sm"
         variant="ghost"
         onClick={() => completedTask(TaskObj)}
       />
       <IconButton
-        data-testid={`${TaskObj.id}-taskbutton-todo-app-delete`}
+        data-testid="taskbutton-todo-app-delete"
         aria-label="close"
         icon={<CloseIcon />}
         size="sm"

@@ -34,7 +34,7 @@ export const InputSearch: React.FC = () => {
           <Flex display="flex" flexDirection="column" alignItems="center">
             <Input
               data-testid="taskinput-todo-app-search"
-              onChange={taskInputHandler    }
+              onChange={taskInputHandler}
               mr={2}
               variant="filled"
               placeholder="Search"
