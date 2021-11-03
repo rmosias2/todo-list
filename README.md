@@ -14,6 +14,7 @@ This project is built using the following technologies:
 2. [Emotion](https://emotion.sh/)
 3. [TypeScript](https://www.typescriptlang.org/)
 4. [Next JS](https://nextjs.org)
+5. [Cypress](https://www.cypress.io)
 
 ## Patterns
 1. [Commit Semantic](http://karma-runner.github.io/6.3/dev/git-commit-msg.html)
@@ -48,6 +49,32 @@ yarn dev
 ```
 
 The above command will start the application on [http://localhost:3000/](http://localhost:3000).
+
+## Run all tests
+
+From the root directory, we can run the following command to start the application:
+
+```sh
+yarn test
+```
+
+## Cypress e2e testing
+
+### 1. **Start the application**
+
+
+From the root directory, we can run the following command to start the application:
+
+```sh
+yarn dev
+```
+
+### 2. **Start the cypress run test**
+
+```sh
+yarn cypress run
+```
+
 
 ## Live Demo
 https://distracted-khorana-6160ed.netlify.app
